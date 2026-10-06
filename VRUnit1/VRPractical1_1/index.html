@@ -4,14 +4,173 @@
   </head>
   <body>
     <a-scene>
-      <a-box wireframe=true class="car" position="0 1.25 0" >
+      <a-box wireframe=true class="car" position="0 1.25 0" width="5" height="5" depth="5" color="black">
           <a-box wireframe=true class="body">
-              <a-box color="grey" position="0 .75 -1.25" width="2.5" height="1.25"></a-box>
-              <a-box color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3"></a-box>
-              <a-box color="grey" position="0 .75 .75" width="2.5" height="1.25"></a-box>
-              <a-box position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
           </a-box>
-          <a-plane></a-plane>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-box wireframe=true class="tires" position="0 -1.125 0">
+              <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="-1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+          </a-box>
+      </a-box>
+      <a-box wireframe=true class="car" position="0 1.25 6" width="5" height="5" depth="5" color="black">
+          <a-box wireframe=true class="body">
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
+          </a-box>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-box wireframe=true class="tires" position="0 -1.125 0">
+              <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="-1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+          </a-box>
+      </a-box>
+      <a-box wireframe=true class="car" position="0 1.25 -6" width="5" height="5" depth="5" color="black">
+          <a-box wireframe=true class="body">
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
+          </a-box>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-box wireframe=true class="tires" position="0 -1.125 0">
+              <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="-1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+          </a-box>
+      </a-box>
+      <a-box wireframe=true class="car" position="6 1.25 0" width="5" height="5" depth="5" color="black" rotation="0 90 0">
+          <a-box wireframe=true class="body">
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
+          </a-box>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-box wireframe=true class="tires" position="0 -1.125 0">
+              <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="-1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+          </a-box>
+      </a-box>
+      <a-box wireframe=true class="car" position="-6 1.25 0" width="5" height="5" depth="5" color="black" rotation="0 -90 0">
+          <a-box wireframe=true class="body">
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
+          </a-box>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-box wireframe=true class="tires" position="0 -1.125 0">
+              <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="-1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+          </a-box>
+      </a-box>
+      <a-box wireframe=true class="car" position="0 7.25 0" width="5" height="5" depth="5" color="black">
+          <a-box wireframe=true class="body">
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
+          </a-box>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-box wireframe=true class="tires" position="0 -1.125 0">
+              <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="-1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+              <a-box class="tire" position="1.25 .45 -1.75" wireframe=true>
+                  <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
+              </a-box>
+          </a-box>
+      </a-box>
+      <a-box wireframe=true class="car" position="0 -4.75 0" width="5" height="5" depth="5" color="black">
+          <a-box wireframe=true class="body">
+              <a-box src="metal.jpg" color="grey" position="0 .75 -1.25" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 1.5 -.25" width="2.5" height=".5" depth="3" repeat="15 0"></a-box>
+              <a-box src="metal.jpg" color="grey" position="0 .75 .75" width="2.5" height="1.25" repeat="5 0"></a-box>
+              <a-box src="metal.jpg" position="0 -.25 0" depth="5" width="2.5" height=".75" color="gray" repeat="25 0"></a-box>
+          </a-box>
+          <a-plane position="0 .5 1.27" rotation="0 0 90" color="cyan" width="2" height="2"></a-plane>
+          <a-plane position="0 .5 1.26" rotation="0 0 90" color="black" width="2.5" height="2.5"></a-plane>
+          <a-plane position="-.75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
+          <a-plane position=".75 -.25 2.51" rotation="0 0 90" color="yellow" width=".5" height=".75"></a-plane>
           <a-box wireframe=true class="tires" position="0 -1.125 0">
               <a-box class="tire" position="-1.25 .45 1.75" wireframe=true>
                   <a-cylinder rotation="90 90 0" radius=".5" height=".25" color="black"></a-cylinder>
@@ -28,9 +187,450 @@
           </a-box>
       </a-box>
 
-      <a-plane position="0 0 0" rotation="-90 0 0" width="10" depth="10" height="10" color="#7BC8A4"></a-plane>
+      <a-box class="tree" position="5 1.5 5" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-5 1.5 -5" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="5 1.5 -5" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-5 1.5 5" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="10 1.5 10" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-10 1.5 -10" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="10 1.5 -10" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-10 1.5 10" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="15 1.5 15" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-15 1.5 -15" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="15 1.5 -15" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-15 1.5 15" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="20 1.5 20" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-20 1.5 -20" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="20 1.5 -20" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-20 1.5 20" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="25 1.5 25" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-25 1.5 -25" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="25 1.5 -25" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-25 1.5 25" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="30 1.5 30" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-30 1.5 -30" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="30 1.5 -30" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-30 1.5 30" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="35 1.5 35" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-35 1.5 -35" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="35 1.5 -35" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-35 1.5 35" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="40 1.5 40" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-40 1.5 -40" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="40 1.5 -40" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-40 1.5 40" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="45 1.5 45" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-45 1.5 -45" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="45 1.5 -45" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-45 1.5 45" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="50 1.5 50" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-50 1.5 -50" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="50 1.5 -50" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      <a-box class="tree" position="-50 1.5 50" rotation="0 0 0">
+            <!-- Trunk -->
+            <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+            <!-- Pines -->
+            <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+            <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" depth="100" height="100" color="#7BC8A4" src="texture_grass.jpeg" repeat="100 100"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
-      <a-camera position="2.5 1 -2.5" rotation="0 90 0"></a-camera>
+      <a-camera position="0 5 10" rotation="0 90 0"></a-camera>
     </a-scene>
   </body>
 </html>
