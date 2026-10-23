@@ -1,13 +1,18 @@
 window.addEventListener("DOMContentLoaded",function() {
   let scene = document.querySelector("a-scene");
 
-  let shape = document.createElement("a-dodecahedron");
+  let dodecahedron1 = document.createElement("a-dodecahedron");
 
-  shape.setAttribute("position","0 0 0");
-  shape.setAttribute("color","black");
-  shape.setAttribute("radius",5);
+  dodecahedron1.setAttribute("position","0 5 -50");
+  dodecahedron1.setAttribute("color","yellow");
+  dodecahedron1.setAttribute("radius",5);
 
-  scene.append(dodecahedron);
+  scene.append(dodecahedron1);
+  for(let a=0; a>100; a++){
+    let dodecahedron = document.createElement("a-dodecahedron");
+    dodecahedron.setAttribute("position",{x: a, y: a, z: a});
+    scene.append(dodecahedron);
+  }
   
 })
   //Challenge 1: Create a variable scene for the <a-scene> component in the HTML
