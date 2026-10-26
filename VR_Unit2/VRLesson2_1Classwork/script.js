@@ -10,7 +10,8 @@ window.addEventListener("DOMContentLoaded",function() {
   scene.append(dodecahedron1);
   for(let a=0; a>100; a++){
     let dodecahedron = document.createElement("a-dodecahedron");
-    dodecahedron.setAttribute("position",{x: a, y: a, z: a});
+    dodecahedron.setAttribute("position",{x:a}, {y:a}, {
+      z:a});
     scene.append(dodecahedron);
   }
   
