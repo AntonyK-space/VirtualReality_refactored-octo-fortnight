@@ -72,6 +72,26 @@ function createCloud(x, y, z){
   cloudpart7.setAttribute("color", "gray");
   cloud.append(cloudpart7);
 
+  let cloudpart8 = document.createElement("a-sphere");
+  cloudpart8.setAttribute("position", "-3 0 -3");
+  cloudpart8.setAttribute("color", "gray");
+  cloud.append(cloudpart8);
+
+  let cloudpart9 = document.createElement("a-sphere");
+  cloudpart9.setAttribute("position", "3 0 3");
+  cloudpart9.setAttribute("color", "gray");
+  cloud.append(cloudpart9);
+
+  let cloudpart10 = document.createElement("a-sphere");
+  cloudpart10.setAttribute("position", "0 -3 -3");
+  cloudpart10.setAttribute("color", "gray");
+  cloud.append(cloudpart10);
+
+  let cloudpart11 = document.createElement("a-sphere");
+  cloudpart11.setAttribute("position", "0 3 3");
+  cloudpart11.setAttribute("color", "gray");
+  cloud.append(cloudpart11);
+
   cloud.setAttribute("position",{x:x, y:y, z:z});
   scene.append(cloud)
 }
@@ -95,6 +115,7 @@ function createHouse(x, y, z){
   room.setAttribute("height", "2");
   room.setAttribute("depth", "2");
   room.setAttribute("width", "2.5");
+  room.setAttribute("position", "0 1 0");
   house.append(room);
 
   let roof = document.createElement("a-cylinder");
@@ -102,7 +123,7 @@ function createHouse(x, y, z){
   roof.setAttribute("radius", "1");
   roof.setAttribute("segments-radial", "3");
   roof.setAttribute("rotation", "-90 0 0");
-  roof.setAttribute("position", "0 1.25 0");
+  roof.setAttribute("position", "0 2.25 0");
   roof.setAttribute("scale", "1.5 2.25 .5");
   house.append(roof);
 
