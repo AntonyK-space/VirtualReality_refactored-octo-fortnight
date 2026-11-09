@@ -4,7 +4,7 @@ class UFO{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dy = .01;
+    this.dy = .1;
 
     let top = document.createElement("a-sphere");
     top.setAttribute("color","cyan");
