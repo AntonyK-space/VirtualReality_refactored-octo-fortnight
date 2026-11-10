@@ -7,13 +7,15 @@ window.addEventListener("DOMContentLoaded",function() {
 
    for(let i = 0; i < 999; i++){
      let x = rnd(-50,50);
+     let y = rnd(0,99);
      let z = rnd(-50,50);
-     let rocket = new Rocket(x, 1, z);
+     let rocket = new Rocket(x, y, z);
      rockets.push( rocket );
    }
-   for(let i = 0; i < 9999; i++){
+   
+   for(let i = 0; i < 999; i++){
      let x = rnd(-50,50);
-     let y = rnd(50, 100);
+     let y = rnd(50, 500);
      let z = rnd(-50,50);
      let ufo = new UFO(x, y, z);
      ufoes.push( ufo );
@@ -27,6 +29,7 @@ function loop(){
   }
   for(let ufo of ufoes){
     ufo.fall();
+    ufo.breakdance();
   }
   
   window.requestAnimationFrame( loop );
