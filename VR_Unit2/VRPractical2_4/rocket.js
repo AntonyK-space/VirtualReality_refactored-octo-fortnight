@@ -4,7 +4,7 @@ class Rocket{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dy = .01;
+    this.dy = .1;
     this.yy = .01;
 
     let pointytop = document.createElement("a-cone");
