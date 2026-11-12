@@ -4,7 +4,8 @@ class Rocket{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dy = 1;
+    this.dy = .01;
+    this.yy = .01;
 
     let pointytop = document.createElement("a-cone");
     pointytop.setAttribute("color","grey");
@@ -30,6 +31,7 @@ class Rocket{
     scene.append( this.obj );
   }
   fly(){
+    this.dy += this.yy;
     this.y += this.dy;
     this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z});
     if(this.y > 100){

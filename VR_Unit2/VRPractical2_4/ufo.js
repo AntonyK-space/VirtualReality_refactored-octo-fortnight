@@ -11,6 +11,11 @@ class UFO{
     this.rdx = 7;
     this.rdy = 5;
     this.rdz = 3;
+    this.rrx = .001;
+    this.rry = .001;
+    this.rrz = .001;
+    this.scalebegin = 1;
+    this.scaleadd = .0001;
 
     let top = document.createElement("a-sphere");
     top.setAttribute("color","cyan");
@@ -37,9 +42,16 @@ class UFO{
     }
   }
   breakdance(){
+    this.rdx += this.rrx;
+    this.rdy += this.rry;
+    this.rdz += this.rrz;
     this.rx -= this.rdx;
     this.ry += this.rdy;
     this.rz -= this.rdz;
     this.obj.setAttribute("rotation",{x:this.rx, y:this.ry, z:this.rz});
+  }
+  growth(){
+    this.scalebegin += this.scaleadd;
+    this.obj.setAttribute("scale",{x:this.scalebegin, y:this.scalebegin, z:this.scalebegin})
   }
 }

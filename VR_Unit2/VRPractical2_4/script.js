@@ -30,6 +30,7 @@ function loop(){
   for(let ufo of ufoes){
     ufo.fall();
     ufo.breakdance();
+    ufo.growth();
   }
   
   window.requestAnimationFrame( loop );
